@@ -1,0 +1,54 @@
+<%= form_for @infraccion do |form| %>
+  <div>
+    <%= form.label :importe %><br>
+    <%= form.number_field :importe %>
+    <% @infraccion.errors.full_messages_for(:importe).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+  <div>
+    <%= form.label :calle %><br>
+    <%= form.text_field :calle %>
+    <% @infraccion.errors.full_messages_for(:calle).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+  <div>
+    <%= form.label :municipio %><br>
+    <%= form.text_field :municipio %>
+    <% @infraccion.errors.full_messages_for(:municipio).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+  <div>
+    <%= form.label :propietario_id %><br>
+    <%= form.number_field :propietario_id %>
+    <% @infraccion.errors.full_messages_for(:propietario_id).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+  <div>
+    <%= form.label :articulo_id %><br>
+    <%= form.number_field :articulo_id %>
+    <% @infraccion.errors.full_messages_for(:articulo_id).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+  <div>
+    <%= form.label :oficial_id %><br>
+    <%= form.number_field :oficial_id %>
+    <% @infraccion.errors.full_messages_for(:oficial_id).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+  <div>
+    <%= form.label :fecha %><br>
+    <%= form.date_field :fecha%>
+    <% @infraccion.errors.full_messages_for(:fecha).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

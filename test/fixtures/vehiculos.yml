@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero_tarjeta_circulacion: 1
+  numero_serie: MyString
+  numero_placa: MyString
+  fecha_caducidad_tarjeta: 2021-09-06 14:35:39
+
+two:
+  numero_tarjeta_circulacion: 1
+  numero_serie: MyString
+  numero_placa: MyString
+  fecha_caducidad_tarjeta: 2021-09-06 14:35:39

@@ -1,0 +1,13 @@
+<h1>Propietarios de un vehículo</h1>
+
+<ul>
+  <% @propietarios.each do |propietario| %>
+    <li>
+      <a href="<%= propietario_path(propietario) %>">
+        <%= propietario.curp %>
+        <%= propietario.fecha_nacimiento %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "Nuevo Propietario", new_propietario_path %>

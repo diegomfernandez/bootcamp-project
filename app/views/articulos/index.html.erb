@@ -1,0 +1,13 @@
+<h1>Articulos del reglamento de tránsito</h1>
+
+<ul>
+  <% @articulos.each do |articulo| %>
+    <li>
+      <a href="<%= articulo_path(articulo) %>">
+        <%= articulo.id %>
+        <%= articulo.descripcion %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "Nuevo Articulo", new_articulo_path %>

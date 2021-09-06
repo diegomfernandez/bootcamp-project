@@ -1,0 +1,10 @@
+<h3>Personas</h3>
+<% personable.personas.each do |persona| %>
+  <p>
+    <hr>
+    <%= persona.nombres %>
+    <%= persona.apellido_paterno %>
+    <%= persona.apellido_materno %>
+    <em><%= persona.created_at %></em>
+  </p>
+<% end %>

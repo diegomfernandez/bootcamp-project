@@ -1,0 +1,12 @@
+<h1>Oficiales de tránsito</h1>
+
+<ul>
+  <% @oficials.each do |oficial| %>
+    <li>
+      <a href="<%= oficial_path(oficial) %>">
+        <%= oficial.numero_agente %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "Nuevo Oficial", new_oficial_path %>

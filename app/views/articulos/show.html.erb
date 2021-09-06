@@ -1,0 +1,9 @@
+<h1><%= @articulo.id %></h1>
+<p><%= @articulo.descripcion %></p>
+
+<ul>
+    <li><%= link_to "Editar", edit_articulo_path(@articulo) %></li>
+    <li><%= link_to "Eliminar", articulo_path(@articulo),
+                  method: :delete,
+                  data: { confirm: "¿Estàs seguro?" } %></li>
+</ul>

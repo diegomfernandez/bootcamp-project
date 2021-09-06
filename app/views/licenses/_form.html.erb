@@ -1,0 +1,33 @@
+<%= form_for @license do |form| %>
+  <div>
+    <%= form.label :numero %><br>
+    <%= form.text_field :numero %>
+    <% @license.errors.full_messages_for(:numero).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+  <div>
+    <%= form.label :tipo %><br>
+    <%= form.text_field :tipo %>
+    <% @license.errors.full_messages_for(:tipo).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+  <div>
+    <%= form.label :propietario_id %><br>
+    <%= form.number_field :propietario_id %>
+    <% @license.errors.full_messages_for(:propietario_id).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+  <div>
+    <%= form.label :fecha_caducidad %><br>
+    <%= form.date_field :fecha_caducidad %>
+    <% @license.errors.full_messages_for(:fecha_caducidad).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

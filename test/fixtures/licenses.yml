@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero: MyString
+  tipo: MyString
+  fecha_caducidad: 2021-09-04 14:54:36
+  propietario: one
+
+two:
+  numero: MyString
+  tipo: MyString
+  fecha_caducidad: 2021-09-04 14:54:36
+  propietario: two

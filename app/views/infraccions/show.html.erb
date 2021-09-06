@@ -1,0 +1,11 @@
+<p><%= @infraccion.id %></p>
+<p><%= @infraccion.calle %></p>
+<p><%= @infraccion.importe %></p>
+<p><%= @infraccion.municipio %></p>
+<p><%= @infraccion.fecha %></p>
+<ul>
+    <li><%= link_to "Editar", edit_infraccion_path(@infraccion) %></li>
+    <li><%= link_to "Eliminar", infraccion_path(@infraccion),
+                  method: :delete,
+                  data: { confirm: "¿Estàs seguro?" } %></li>
+</ul>

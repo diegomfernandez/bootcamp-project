@@ -1,0 +1,17 @@
+<%= form_for([personable,Persona.new], local: true) do |form| %>
+  <div>
+    <%= form.label :nombres %><br>
+    <%= form.text_field :nombres %>
+  </div>
+  <div>
+    <%= form.label :apellido_paterno %><br>
+    <%= form.text_field :apellido_paterno %>
+  </div>
+  <div>
+    <%= form.label :apellido_materno %><br>
+    <%= form.text_field :apellido_materno %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

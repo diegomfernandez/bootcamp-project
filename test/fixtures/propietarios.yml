@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  curp: MyString
+  fecha_nacimiento: 2021-09-04 07:05:46
+
+two:
+  curp: MyString
+  fecha_nacimiento: 2021-09-04 07:05:46

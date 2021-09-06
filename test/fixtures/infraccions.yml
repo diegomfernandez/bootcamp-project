@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  articulo: one
+  propietario: one
+  oficial: one
+  importe: 1.5
+  fecha: 2021-09-04 17:24:08
+  calle: MyString
+  municipio: MyString
+
+two:
+  articulo: two
+  propietario: two
+  oficial: two
+  importe: 1.5
+  fecha: 2021-09-04 17:24:08
+  calle: MyString
+  municipio: MyString

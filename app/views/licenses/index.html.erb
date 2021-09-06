@@ -1,0 +1,15 @@
+<h1>Licencias de propietarios</h1>
+
+<ul>
+  <% @licenses.each do |license| %>
+    <li>
+      <a href="<%= license_path(license) %>">
+        <%= license.numero %>
+        <%= license.tipo %>
+        <%= license.fecha_caducidad %>
+        
+      </a>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "Nueva Licencia", new_license_path %>

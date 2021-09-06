@@ -1,0 +1,9 @@
+<p><%= @license.numero %></p>
+<p><%= @license.tipo %></p>
+<p><%= @license.fecha_caducidad %></p>
+<ul>
+    <li><%= link_to "Editar", edit_license_path(@license) %></li>
+    <li><%= link_to "Eliminar", license_path(@license),
+                  method: :delete,
+                  data: { confirm: "¿Estàs seguro?" } %></li>
+</ul>

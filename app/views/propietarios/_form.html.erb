@@ -1,0 +1,19 @@
+<%= form_for @propietario do |form| %>
+  <div>
+    <%= form.label :curp %><br>
+    <%= form.text_field :curp %>
+    <% @propietario.errors.full_messages_for(:curp).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+   <div>
+    <%= form.label :fecha_nacimiento %><br>
+    <%= form.date_field :fecha_nacimiento %>
+    <% @propietario.errors.full_messages_for(:fecha_nacimiento).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

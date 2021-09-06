@@ -1,0 +1,11 @@
+<h1><%= @oficial.numero_agente %></h1>
+<%= render partial: "personas/personas", locals: {personable: @oficial} %>
+<%= render partial: "personas/form", locals: {personable: @oficial} %>
+
+<ul>
+    <li><%= link_to "Editar", edit_oficial_path(@oficial) %></li>
+    <li><%= link_to "Eliminar", oficial_path(@oficial),
+                  method: :delete,
+                  data: { confirm: "¿Estàs seguro?" } %></li>
+    <li><%= link_to 'Back', oficials_path %></li>
+</ul>

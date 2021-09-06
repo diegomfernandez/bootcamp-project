@@ -1,0 +1,12 @@
+<%= form_for @oficial do |form| %>
+  <div>
+    <%= form.label :numero_agente %><br>
+    <%= form.text_field :numero_agente %>
+    <% @oficial.errors.full_messages_for(:numero_agente).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

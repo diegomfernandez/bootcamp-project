@@ -1,0 +1,12 @@
+<h1><%= @propietario.curp %></h1>
+<p><%= @propietario.fecha_nacimiento %></p>
+<%= render partial: "personas/personas", locals: {personable: @propietario} %>
+<%= render partial: "personas/form", locals: {personable: @propietario} %>
+
+<ul>
+    <li><%= link_to "Editar", edit_propietario_path(@propietario) %></li>
+    <li><%= link_to "Eliminar", propietario_path(@propietario),
+                  method: :delete,
+                  data: { confirm: "¿Estàs seguro?" } %></li>
+    <li><%= link_to 'Back', propietarios_path %></li>
+</ul>

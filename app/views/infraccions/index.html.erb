@@ -1,0 +1,16 @@
+<h1>Infracciones</h1>
+
+<ul>
+  <% @infraccions.each do |infraccion| %>
+    <li>
+      <a href="<%= infraccion_path(infraccion) %>">
+        <%= infraccion.id %>
+        <%= infraccion.importe %>
+        <%= infraccion.fecha %>
+        <%= infraccion.calle %>
+        
+      </a>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "Nueva Infraccion", new_infraccion_path %>
