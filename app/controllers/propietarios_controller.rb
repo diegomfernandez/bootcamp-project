@@ -37,7 +37,10 @@ class PropietariosController < ApplicationController
 
     redirect_to propietarios_path
   end
-  
+  def create_random
+    GenerateRandomPropietarioJob.perform_later
+    redirect_to propietarios_path
+  end
   private
     def propietario_params
       params.require(:propietario).permit(:curp,:fecha_nacimiento)
